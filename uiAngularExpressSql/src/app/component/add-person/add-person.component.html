@@ -1,0 +1,55 @@
+<div class="mainForm">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form" #personForm="ngForm" class="formPlacment">
+        <div class="formRow">
+            <div class="formDiv">
+                <label>Person Name</label>
+            </div>
+            <div class="formDiv">
+                <input type="text"  formControlName="personName"/>
+            </div>
+        </div>
+
+        <div class="formRow">
+            <div class="formDiv">
+                <label>Person Address</label>
+            </div>
+            <div class="formDiv">
+                <input type="text" formControlName="personAddress"/>
+            </div>
+        </div>
+
+        <div class="formRow">
+            <div class="formDiv">
+                <label>Date of Birth</label>
+            </div>
+            <div class="formDiv">
+                <input type="text" formControlName="personDob"/>
+            </div>
+        </div>
+
+        <div class="formRow">
+            <div class="formDiv">
+                <label>Email</label>
+            </div>
+            <div class="formDiv">
+                <input type="email" formControlName="personEmail"/>
+            </div>
+        </div>
+
+        <div class="formRow">
+            <div class="formDiv">
+                <label>Gender</label>
+            </div>
+            <div class="formDiv">
+                <input type="radio" name="personGender" id="male" formControlName="personGender" value="male"/>
+                <label for="male">Male</label>
+                
+                <input type="radio" name="personGender" id="female" formControlName="personGender"value="female"/>
+                <label for="female">Female</label>
+
+            </div>
+        </div>
+        <!-- <button (click)="postData()">Submit</button> -->
+        <button type="submit" [disabled]="!form.valid">Save</button>
+    </form>
+</div>

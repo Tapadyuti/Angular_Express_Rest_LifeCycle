@@ -1,0 +1,18 @@
+.mainForm {
+  display: flex;
+  justify-content: center;
+}
+.formPlacment {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.formRow {
+  display: flex;
+  margin: 10px;
+}
+.formDiv {
+  min-width: 200px;
+  display: flex;
+  justify-content: left;
+}
