@@ -12,10 +12,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "resolveJsonModule": true,  // this is added to read local JSON
+    "esModuleInterop": true,    // this is added to read local JSON
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false

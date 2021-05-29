@@ -1,0 +1,16 @@
+<h1>About All Persons</h1>
+<div class="tableBlock">
+    <table>
+        <tbody>
+            <tr>
+                <td>Persons</td>
+                <td>Person Address</td>
+            </tr>
+            <tr *ngFor="let dt of tableData">
+                <td>{{dt.PersonName}}</td>
+                <td>{{dt.PersonAddress}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div><button (click)="goToAddPerson()">Add Person</button></div>
+</div>

@@ -14,7 +14,10 @@
                 <label>Person Address</label>
             </div>
             <div class="formDiv">
-                <input type="text" formControlName="personAddress"/>
+                <select formControlName="personAddress">
+                    <option disabled >Select a State</option>
+                    <option *ngFor="let st of states">{{st.name}}</option>
+                </select>
             </div>
         </div>
 
@@ -53,3 +56,4 @@
         <button type="submit" [disabled]="!form.valid">Save</button>
     </form>
 </div>
+<a [routerLink]="['../person']">View Person</a>
