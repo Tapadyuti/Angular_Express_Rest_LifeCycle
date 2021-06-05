@@ -9,6 +9,8 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class PersonComponent implements OnInit {
 
+  title="View All Person"
+
   tableData:any = [];
   constructor(private dataService:DataService, private router:Router, private route:ActivatedRoute) { }
 

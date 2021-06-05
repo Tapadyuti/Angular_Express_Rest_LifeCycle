@@ -21,7 +21,7 @@ import { PersonComponent } from './component/person/person.component';
     PersonComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
